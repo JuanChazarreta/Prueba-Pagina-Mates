@@ -10,58 +10,64 @@ body {
 
 /*delimite los bordes de cada seccion*/
 header{
-    border: red solid 1px;
+    /* border: red solid 1px; */
     padding: 20px;
     margin: 10px 2px;
 }
-main{
-    border: yellow solid 1px;
+ main{
+    /* border: yellow solid 1px; */
     padding: 20px;
     margin: 10px 2px;
 }
 footer{
-    border: green solid 1px;
+    /* border: green solid 1px; */
     padding: 20px;
     margin: 10px 2px;
-} 
+}  
 .bordes {
-    border: blue solid 1px;
+    /* border: blue solid 1px; */
     padding: 10px;
 
-}
+}  
 /*delimite los bordes de cada seccion*/
 
-.contenedor-titulo-logo{
-    justify-content: left;
-    display: flex;
-    align-items: center;
-    max-width: fit-content;
-    border:2px solid red;
-}    
-.logo{
-    display:inline-block;
-    margin:0px 5px 0px 10px;
-}
 .titulo{
-    display: inline-block;
-    text-align: center;
-    margin: 5px 10px 5px 5px;
-    font-size: 45px;
+    font-size: 24px;
     color:white;
+    max-width: 140px;
 }
-
-.login-button{
-    float: right;
-    margin-right: 20px;
-    margin-top: -54px;   
-}
-.login{
-    padding: 12px 10px;
-    background-color: rgba(0,0,0, 0.8);
+.subtitulo{
+    font-size: 14px;
     color: white;
-    border-radius: 10px;
-    cursor: pointer;
-    border: none;
-    font-size: 16px;
+    max-width: 140px;
+    text-align: center;;
+}
+.logo-titulo{
+    display: flex;   
+    align-items: center;
+    justify-content: center; 
 }
 
+.barra-busqueda{
+    justify-content: center;
+    display: flex;
+    margin: auto;
+    width: 100%;
+    max-width: 500px;
+    min-width: 10px;
+    padding: 10px 30px;
+    border-radius: 20px;
+    border:none;
+}
+.login-button{
+    padding: 10px 15px;
+    border-radius: 12px;
+    border:none;
+    background-color: rgba(161, 161, 161, 0.5);
+    cursor: pointer;
+    color: white;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 1);
+}
+.login-button:hover{
+    background-color: rgba(161, 161, 161, 1);
+}
