@@ -114,7 +114,7 @@ footer{
     margin-top: 20px;
 }
 .banner-mates, .banner-bombillas, .banner-termos, .banner-materas, .banner-grabados, .banner-combos{
-    border: none;
+    border: 1px solid red;
     padding: 200px;
     display: inline-block;
     background-color: rgba(0, 0, 0, 1);
@@ -157,4 +157,8 @@ footer{
 transform: scale(1.08);
 transition: transform 0.3s ease;
 z-index: 1;
+}
+
+span {
+    border:2px solid red;
 }
