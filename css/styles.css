@@ -15,21 +15,24 @@ header{
     padding: 20px;
     margin: 10px 2px;
 }
+
  main{
     /* border: yellow solid 1px; */
     padding: 20px;
     margin: 10px 2px;
 }
+
 footer{
     /* border: green solid 1px; */
     padding: 20px;
     margin: 10px 2px;
 }  
+
 .bordes {
     /* border: blue solid 1px; */
     padding: 10px;
+} 
 
-}  
 /*delimite los bordes de cada seccion*/
 
 .titulo{
@@ -37,12 +40,14 @@ footer{
     color:white;
     max-width: 140px;
 }
+
 .subtitulo{
     font-size: 14px;
     color: white;
     max-width: 140px;
     text-align: center;;
 }
+
 .logo-titulo{
     display: flex;   
     align-items: center;
@@ -60,6 +65,7 @@ footer{
     border-radius: 20px;
     border:none;
 }
+
 .login-button{
     padding: 10px 15px;
     border-radius: 12px;
@@ -69,9 +75,11 @@ footer{
     color: white;
     box-shadow: 3px 3px 4px rgba(0, 0, 0, 1);
 }
+
 .login-button:hover{
     background-color: rgba(161, 161, 161, 1);
 }
+
 /* Esto esta relativamente bien */
 
 
@@ -95,6 +103,7 @@ footer{
 .link-apartados:active{
     color: rgb(255, 255, 255);   
 }
+
 .link-apartados:hover{
     background-color: rgba(161, 161, 161, 1);
 }
@@ -115,6 +124,7 @@ footer{
     margin: 0px 0px 60px 0px;
     padding-bottom: 30px;
 }
+
 .banner-mates, .banner-bombillas, .banner-termos, .banner-materas, .banner-grabados, .banner-combos {
     padding: 200px;
     display: inline-block;
@@ -122,36 +132,43 @@ footer{
     margin: 40px 30px 10px 30px;
     border-radius: 30px;
 }
+
 .banner-mates{
     background-image: url(../img/imperial-algarrobo-premium.png); /*foto de fondo*/
     background-size: cover; /*cubre todo el espacio*/
     background-position: center; /*centra la foto*/
 }
+
 .banner-bombillas{
     background-image: url(../img/Bombillon-liso-alpaca.png); 
     background-size: cover; 
     background-position:bottom;
 }
+
 .banner-termos{
     background-image: url(../img/termos.png); 
     background-size: cover; 
     background-position: center;
 }
+
 .banner-materas{
     background-image: url(../img/mochila-matera.png);
     background-size: cover;
     background-position: center;/
 }
+
 .banner-grabados{
     background-image: url(../img/grabado-mate.png);
     background-size: cover;
     background-position: bottom; 
 }
+
 .banner-combos{
     background-image: url(../img/combo-mate-bombilla.png);
     background-size: cover;
     background-position: center;
 }
+
 /* Estilos para los banners de productos */
 
 .link-banner:hover{
@@ -159,6 +176,7 @@ transform: scale(1.08);
 transition: transform 0.3s ease;
 z-index: 1;
 }
+
 .link-banner > h3 {
     font-size: 25px;
     background-color: rgba(161, 161, 161, 0.5);
@@ -168,4 +186,12 @@ z-index: 1;
     margin: auto;
     color:white;
     
+}
+
+.header{
+    height:100vh; 
+    background: url(../img/imperial-algarrobo-premium.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
