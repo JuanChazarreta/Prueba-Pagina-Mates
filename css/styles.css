@@ -6,6 +6,7 @@
 
 body {
     background-color:rgba(0, 0, 0, 0.8);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 /*delimite los bordes de cada seccion*/
@@ -111,14 +112,14 @@ footer{
     align-items: center;
     flex-wrap: wrap;
     gap: 20px;
-    margin-top: 20px;
+    margin: 0px 0px 60px 0px;
+    padding-bottom: 30px;
 }
-.banner-mates, .banner-bombillas, .banner-termos, .banner-materas, .banner-grabados, .banner-combos{
-    border: 1px solid red;
+.banner-mates, .banner-bombillas, .banner-termos, .banner-materas, .banner-grabados, .banner-combos {
     padding: 200px;
     display: inline-block;
     background-color: rgba(0, 0, 0, 1);
-    margin: 40px 30px;
+    margin: 40px 30px 10px 30px;
     border-radius: 30px;
 }
 .banner-mates{
@@ -158,7 +159,13 @@ transform: scale(1.08);
 transition: transform 0.3s ease;
 z-index: 1;
 }
-
-span {
-    border:2px solid red;
+.link-banner > h3 {
+    font-size: 25px;
+    background-color: rgba(161, 161, 161, 0.5);
+    border-radius: 20px;
+    text-align: center;
+    max-width: 85%;
+    margin: auto;
+    color:white;
+    
 }
