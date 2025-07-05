@@ -1,73 +1,56 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>Yerba al Palo</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body>
-    <div class="bordes">
-        <header class="header">
-            <section class="logo-titulo">
-                <img src="https://skillicons.dev/icons?i=github" alt="Yerba al Palo Logo" class="logo">
-                    <div class="titulo-subtitulo">
-                        <h1 class="titulo">Yerba al Palo</h1>
-                        <p class="subtitulo">No es solo yerba, es cultura.</p>
-                    </div>
-                <input class="barra-busqueda" type="search" placeholder="Mates camioneros, bomibillas de alpaca, ...">
-                <button class="login-button" onclick="document.location='pages/ingresar.html'">Ingresar</button>
-                
-            </section>
-        </header>
+    <header>
+        <div class="container flex mx-auto px-4 py-3 justify-between items-center">
+            <div class="flex items-center ">
+                <h1 class="text-2xl font-bold text-indigo-900">Yerba Al Palo</h1>
+            </div>
+            <nav class="hideen md:flex items-center space-x-6">
+                <a href="#" class="text-gray-600 hover:text-indigo-900 transition duration-300">Inicio</a>
+                <a href="#" class="text-gray-600 hover:text-indigo-900 transition duration-300">Productos</a>
+                <a href="#" class="text-gray-600 hover:text-indigo-900 transition duration-300">Nosotros</a>
+                <a href="#" class="text-gray-600 hover:text-indigo-900 transition duration-300">Contacto</a>
+            </nav>
+            <div class="flex items-center space-x-3">
+                <a href="#" class="text-gray-600 hover:text-indigo-900 transition duration-300">Ingresar</a>
+                <a href="#" class="text-gray-600 hover:text-indigo-900 transition duration-300">Registrarse</a>
+                <a href="#" class="">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </header>
+    <!-- Mobile Menu -->
+     <section class="menu-mobile hidden">
+        <a href="">asd</a>
+        <a href="">asd</a>
+        <a href="">asd</a>
+        <a href="">asd</a>
+        <a href="">ads</a>
+     </section>
+    <!-- Mobile Menu --> 
 
-            <hr>
+    <main>
+        <section class="hero">
+            <h2>No es solo <b>yerba</b>, <br> es <b>cultura</b></h2>
+            <button>Ver Ofertas</button>
+        </section>
+    </main>
 
-        <main>
-            <section class="banner">
-
-                <span  class="link-banner" >
-                    <a href="pages/mates.html"><div class="banner-mates"></div></a>
-                    <h3>MATES</h3>
-                </span>
-
-                <span class="link-banner">
-                    <a href="pages/bombillas.html"><div class="banner-bombillas"></div></a>
-                    <h3>BOMBILLAS</h3>
-                </span>
-
-                <span  class="link-banner" >
-                    <a href="pages/termos.html"><div class="banner-termos"></div></a>
-                    <h3>TERMOS</h3>
-                </span>
-
-                <span  class="link-banner" >
-                    <a href="pages/materas.html"><div class="banner-materas"></div></a>
-                    <h3>MATERAS</h3>
-                </span>
-
-                <span  class="link-banner" >
-                    <a href="pages/grabados.html"><div class="banner-grabados"></div></a>
-                    <h3>GRABADOS</h3>
-                </span>
-
-                <span  class="link-banner" >
-                    <a href="pages/combos.html"><div class="banner-combos"></div></a>
-                    <h3>COMBOS</h3>
-                </span>
-
-            </section>
-
-                <hr class="separador">
-
-            <section class="hero">
-                
-            </section>
-        </main>
-            <hr>
-        <footer>
-
-        </footer>
-    </div>
+    <footer></footer>
 </body>
+
 </html>
