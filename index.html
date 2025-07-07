@@ -3,10 +3,12 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>Yerba al Palo</title>
     <link rel="stylesheet" href="css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&amp;display=swap"
+        rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
@@ -14,43 +16,167 @@
     <header>
         <div class="container flex mx-auto px-4 py-3 justify-between items-center">
             <div class="flex items-center ">
-                <h1 class="text-2xl font-bold text-indigo-900">Yerba Al Palo</h1>
+                <h1 class="text-2xl font-bold ">Yerba Al Palo</h1>
             </div>
             <nav class="hideen md:flex items-center space-x-6">
-                <a href="#" class="text-gray-600 hover:text-indigo-900 transition duration-300">Inicio</a>
-                <a href="#" class="text-gray-600 hover:text-indigo-900 transition duration-300">Productos</a>
-                <a href="#" class="text-gray-600 hover:text-indigo-900 transition duration-300">Nosotros</a>
-                <a href="#" class="text-gray-600 hover:text-indigo-900 transition duration-300">Contacto</a>
+                <a href="#" class="text-gray-600">Inicio</a>
+                <a href="pages/productos.html" class="text-gray-600">Productos</a>
+                <a href="pages/nosotros.html" class="text-gray-600">Nosotros</a>
+                <a href="pages/contacto.html" class="text-gray-600">Contacto</a>
+                <a href="pages/info.html" class="text-gray-600">Info</a>
             </nav>
             <div class="flex items-center space-x-3">
-                <a href="#" class="text-gray-600 hover:text-indigo-900 transition duration-300">Ingresar</a>
-                <a href="#" class="text-gray-600 hover:text-indigo-900 transition duration-300">Registrarse</a>
-                <a href="#" class="">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                <a href="pages/login.html" class="text-gray-600">Ingresar</a>
+                <a href="pages/register.html" class="text-gray-600">Registrarse</a>
+                <a href="pages/cart.html" class="">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z">
+                        </path>
                     </svg>
                 </a>
             </div>
         </div>
     </header>
-    <!-- Mobile Menu -->
-     <section class="menu-mobile hidden">
-        <a href="">asd</a>
-        <a href="">asd</a>
-        <a href="">asd</a>
-        <a href="">asd</a>
-        <a href="">ads</a>
-     </section>
-    <!-- Mobile Menu --> 
+
 
     <main>
         <section class="hero">
             <h2>No es solo <b>yerba</b>, <br> es <b>cultura</b></h2>
             <button>Ver Ofertas</button>
         </section>
+        <section class="productos">
+            <div>
+                <h4>Nuestros Productos</h4>
+                <div>
+                    <select name="categorias" id="categorias">
+                        <option value="categorias">Categorias</option>
+                        <option value="mates">Mates</option>
+                        <option value="bombillas">Bombillas</option>
+                        <option value="termos">Termos</option>
+                        <option value="materas">Materas</option>
+                        <option value="combos">Combos</option>
+                    </select>
+                    <select name="ordenar" id="ordenar">
+                        <option value="ordenar-por">Ordenar por</option>
+                        <option value="menor-mayor">Precio: Menor a Mayor</option>
+                        <option value="mayor-menor">Precio: Mayor a Menor</option>
+                        <option value="mas-populares">Mas Populares</option>
+                        <option value="mas-nuevos">Mas Nuevos</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="tarjetas">
+<!-- Prueba tarjeta con un carrusel de fotos al pasar el mouse -->
+                <div class="tarjeta-producto">
+                    <div class="img-producto">
+                        <img src="img/imperial-algarrobo-premium.png" alt="Imperial de Algarrobo Premium">
+                    </div>
+                    <div class="info-producto">
+                        <h5 class="nombre-producto">Imperial Algarrobo Premium</h5>
+                        <h5 class="precio-producto">$25.000</h5>
+                        <p class="descripcion-producto">Mate Imperial de Algarrobo, con virola de acero inoxidable</p>
+                        <button>Agregar al Carrito</button>
+                    </div>
+                </div>
+<!-- Prueba tarjeta con un carrusel de fotos al pasar el mouse -->
+                <div class="tarjeta-producto">
+                    <div class="img-producto">
+                        <img class="object-[center_-135px]" src="img/Bombillon-liso-alpaca.png" alt="Bombillon Liso de Alpaca">
+                    </div>
+                    <div class="info-producto">
+                        <h5 class="nombre-producto">Bombillon Liso de Alpaca</h5>
+                        <h5 class="precio-producto">$16.000</h5>
+                        <p class="descripcion-producto">Bombillo Liso de Alpaca</p>
+                        <button>Agregar al Carrito</button>
+                    </div>
+                </div>
+
+                <div class="tarjeta-producto">
+                    <div class="img-producto">
+                        <img src="img/imperial-algarrobo-premium.png" alt="Imperial de Algarrobo Premium">
+                    </div>
+                    <div class="info-producto">
+                        <h5 class="nombre-producto">Imperial Algarrobo Premium</h5>
+                        <h5 class="precio-producto">$25.000</h5>
+                        <p class="descripcion-producto">Mate Imperial de Algarrobo, con virola de acero inoxidable</p>
+                        <button>Agregar al Carrito</button>
+                    </div>
+                </div>
+
+                <div class="tarjeta-producto">
+                    <div class="img-producto">
+                        <img src="img/imperial-algarrobo-premium.png" alt="Imperial de Algarrobo Premium">
+                    </div>
+                    <div class="info-producto">
+                        <h5 class="nombre-producto">Imperial Algarrobo Premium</h5>
+                        <h5 class="precio-producto">$25.000</h5>
+                        <p class="descripcion-producto">Mate Imperial de Algarrobo, con virola de acero inoxidable</p>
+                        <button>Agregar al Carrito</button>
+                    </div>
+                </div>
+
+                <div class="tarjeta-producto">
+                    <div class="img-producto">
+                        <img src="img/imperial-algarrobo-premium.png" alt="Imperial de Algarrobo Premium">
+                    </div>
+                    <div class="info-producto">
+                        <h5 class="nombre-producto">Imperial Algarrobo Premium</h5>
+                        <h5 class="precio-producto">$25.000</h5>
+                        <p class="descripcion-producto">Mate Imperial de Algarrobo, con virola de acero inoxidable</p>
+                        <button>Agregar al Carrito</button>
+                    </div>
+                </div>
+
+                <div class="tarjeta-producto">
+                    <div class="img-producto">
+                        <img src="img/imperial-algarrobo-premium.png" alt="Imperial de Algarrobo Premium">
+                    </div>
+                    <div class="info-producto">
+                        <h5 class="nombre-producto">Imperial Algarrobo Premium</h5>
+                        <h5 class="precio-producto">$25.000</h5>
+                        <p class="descripcion-producto">Mate Imperial de Algarrobo, con virola de acero inoxidable</p>
+                        <button>Agregar al Carrito</button>
+                    </div>
+                </div>
+
+                <div class="tarjeta-producto">
+                    <div class="img-producto">
+                        <img src="img/imperial-algarrobo-premium.png" alt="Imperial de Algarrobo Premium">
+                    </div>
+                    <div class="info-producto">
+                        <h5 class="nombre-producto">Imperial Algarrobo Premium</h5>
+                        <h5 class="precio-producto">$25.000</h5>
+                        <p class="descripcion-producto">Mate Imperial de Algarrobo, con virola de acero inoxidable</p>
+                        <button>Agregar al Carrito</button>
+                    </div>
+                </div>
+
+                <div class="tarjeta-producto">
+                    <div class="img-producto">
+                        <img src="img/imperial-algarrobo-premium.png" alt="Imperial de Algarrobo Premium">
+                    </div>
+                    <div class="info-producto">
+                        <h5 class="nombre-producto">Imperial Algarrobo Premium</h5>
+                        <h5 class="precio-producto">$25.000</h5>
+                        <p class="descripcion-producto">Mate Imperial de Algarrobo, con virola de acero inoxidable</p>
+                        <button>Agregar al Carrito</button>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
-    <footer></footer>
+    <footer>
+        <p>© Todos los derechos reservados - 2025</p>
+        <span>
+            <a href="">Instagram</a>
+            <a href="">Facebook</a>
+            <a href="">Contacto</a>
+        </span>
+    </footer>
 </body>
 
 </html>
